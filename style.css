@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
 }
@@ -8,8 +7,8 @@ html, body{
 }
 body {
     display: grid;
-    grid-template-rows: 1fr 8fr 1fr 7fr;  /* Adjusted to give mid section half the height */
-    height: 100vh;  /* Full height of the viewport */
+    grid-template-rows: 1fr 8fr 1fr 7fr;
+    height: 100vh;
     margin: 0;
 }
 
