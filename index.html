@@ -5,135 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    html, body{
-        height: 100%;
-        margin: 0;
-    }
-    .header{
-        font-size: 3.3rem;
-        background-color: rgb(92, 92, 24);
-        height: 9vh;
-    }
-    
-    #getDoggoBtn{
-        background-color: antiquewhite;
-        padding: 4px;
-        position: absolute;
-        top: 28.5rem;
-    }
-    .imgContainer{
-        border: solid;
-        border-radius: 6px;
-        display: flex;
-        justify-content: center;
-        padding: 0.3rem;
-    }
-    .img-main {
-        height: 40vh;
-        width: auto;
-        object-fit: contain;
-        max-width: 100%;
-        display: block;
-    }
-    .welcome {
-        font-family: monospace;
-        font-weight: bolder;
-        font-size: 16rem;
-        background-color: rgba(0, 255, 255, 0.264);
-        margin: 1rem;
-        border-radius: 30%;
-        display: flex;
-        justify-content: center;
-    }
-    .lists{
-        display: flex;
-        margin-top: 2rem;
-        flex-grow: 1;
-        justify-content: space-around;
-        border: solid;
-        border-radius: 1px;
-        margin: 4px;
-        opacity: 0%;
-        transition: opacity 0.4s ease;
-        
-    }
-    .lists > div {
-        width: 32vw;
-        margin: 3px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: rgba(85, 107, 47, 0.423);
-        border: solid;
-        border-radius: 3px;
-        display: flex;
-        flex-wrap: wrap;
-
-    }
-    .buttons{
-        display: flex;
-        justify-content: space-around;
-    }
-    .buttons button {
-        background-color: antiquewhite;
-        padding: 0.4rem;
-    }
-    .lowerSection{
-        
-        height: 100%;
-        background-color: rgba(0, 255, 242, 0.245);
-        display: flex;
-        flex-direction: column;
 
 
-    }
-    .midSection{
-        height: 5rem;
-        border: solid;
-        border-radius: 3px;
-    }
-
-    .splash1{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        opacity: 0%;
-        transition: opacity 0.4s ease;
-    }
-    .show{
-        opacity: 100%
-    }
-    .splash1 button{
-        background-color: rgb(183, 134, 73);
-        position: absolute;
-        bottom: 55px;
-        padding: 4px;
-
-    }
-
-    .testyBtn{
-        position: fixed;
-        background-color: aqua;
-        top: 50px;
-        left: 20px;
-    }
-
-    .lists div img {
-        height: auto;
-        width: 45%;
-        
-    }
-</style>
-<body class="flex flex-col bg-green-900 justify-center items-cente relative">
+<body class="bg-green-900">
     <script src="js/main.js" defer type="module"></script>
 
 
     <div class="testyBtn">testybtn</div>
 
-    <nav class="header p-2 w-full flex justify-center">Doggo Sort</nav>
+    <nav class="header">Doggo Sort</nav>
 
     <main class="imgContainer">
         <img src="" class="img-main" />
@@ -157,6 +39,13 @@
         </div>
     </template>
 
+    <template id="statsTemplate">
+        <div class="stats">
+            <p id="happyCounter">teset</p>
+            <p id="goodCounter">dfg</p>
+            <p id="seriousCouter">dgf</p>
+        </div>
+    </template>
     <template id="buttonsTemplate">
         <div class="buttons">
             <button class="addHappyButton">hes a happy boy</button>

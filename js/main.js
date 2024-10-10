@@ -2,12 +2,14 @@ import { splash1 } from "./splash1.js";
 import { lists } from "./lists.js";
 import { buttons } from "./buttons.js";
 import { pubsub } from "./pubsub.js";
+import { stats } from "./stats.js";
 
 
 
 document.addEventListener("DOMContentLoaded", ()=> {
 
 
+    const header = document.querySelector(".header");
     const mainImg = document.querySelector(".img-main");
     const getDoggoBtn = document.querySelector("#getDoggoBtn");
     const midSection = document.querySelector(".midSection");
@@ -30,6 +32,8 @@ document.addEventListener("DOMContentLoaded", ()=> {
     }
 
 
+
+    stats.render(header);
     buttons.render(midSection)
     
     // splash1.render(lowerSection);
